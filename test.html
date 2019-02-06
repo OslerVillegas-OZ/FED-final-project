@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FED-Developer</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">FED</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./test.html">Test <span class="sr-only">(current)</span></a>
+                  </li> 
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./angular.html">Angular <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./react.html">React <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./node.html">Node <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+
+                <!--Search Botton-->
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+                </form>
+              </div>
+          </nav>
+        </div>
+
+        <div class="jumbotron">
+          <h1 class="display-4">Fron-End-Developer Test</h1>
+          <p class="lead">
+            Select the answer that best fit you.
+          </p>
+          <hr class="my-4">
+          <div>
+            <p id="question" class="lead">
+              Select a button: Imagine you are creating the new Facebook. Which part of the code do you prefert to work with?
+            </p>
+            <p>
+              <input id="btnA1" onclick="arrayFunction()" type="button" class="btn btn-secondary btn-lg btn-dark col-2" value="Structure">
+              You prefer to work in how to organice each module or block of information, to connect one with each other.<br>
+            </p>
+            <p><input id="btnB1" onclick="arrayFunction()" type="button" class="btn btn-secondary btn-lg btn-dark col-2" value="Presentation">
+              Your prefer to orgnaice the information within each block of information.<br>
+            </p>
+            <p><input id="btnC1" onclick="arrayFunction()"  type="button" class="btn btn-secondary btn-lg btn-dark col-2" value="Data">
+              You prefer to work with the data. You connect the data from one database to the web site.
+            </p>
+          </div>
+            <div>
+              <p id="question" class="lead">|
+                Is saturday night, and the life of your friends depend on you winning on a board game. Which board game do you prefer to play?
+              </p>
+              <img id="myImgA2" onclick="myFunction(myImgA2)" src="https://target.scene7.com/is/image/Target/GUEST_81fbf83b-e343-4cd8-a9d4-ce08ea978766?wid=488&hei=488&fmt=pjpeg" class="rounded image" alt="Clue" width="33%" height="200rem">
+              <img id="myImgB2" onclick="myFunction(myImgB2)" src=" https://geekandsundry.com/wp-content/uploads/2016/08/clue-e1471397169997-970x543.jpg" class="rounded image" alt="Guesstures" width="33%" height="200rem">
+              <img id="myImgC2" onclick="myFunction(myImgC2)" src="http://www.ultraboardgames.com/img/slideshow/risk.jpg" class="rounded image " alt="Risk" width="33%" height="200rem">
+            </div>
+            <div>
+              <p id="question" class="lead">
+              Go to the web sites of the following brands and review the user interface. After reviewing the web sites, which site do you prefer
+              to develope? to whsich developer team you want to be part of?
+              </p>
+              <img id="myImgA3" onclick="myFunction(myImgA3)" src="https://pmcvariety.files.wordpress.com/2017/07/netflix-logo.jpg?w=732&h=412&crop=1" class="rounded image" alt="Netflix" width="33%" height="200rem">
+              <img id="myImgB3" onclick="myFunction(myImgB3)" src="http://ralphharris.com/wp-content/uploads/2016/01/celebrity-cruises-logo.png" class="rounded image" alt="Celebrity Cruises" width="33%" height="200rem">
+              <img id="myImgC3" onclick="myFunction(myImgC3)" src="https://seancochran.com/wp-content/uploads/2018/04/Wall-Street-Journal.png" class="rounded image" alt="Wall Strert Journal" width="33%" height="200rem">
+              <a target= "-blank" href="https://www.netflix.com/"><button type="button" class="btn btn-secondary col-2 offset-1 btnLink">Link: Netflix</button></a>
+              <a target= "-blank" href="https://www.celebritycruises.com/cruise-deals"><button type="button" class="btn btn-secondary col-2 offset-2 btnLink">Link: Celebrity Cruises</button></a>
+              <a target= "-blank" href="https://www.nytimes.com/"><button type="button" class="btn btn-secondary col-2 offset-2 btnLink">Link: NY Times</button></a>
+            </div>
+              <button id="btnRslt" class="btn btn-primary btn-lg" role="button">Results</button>
+              
+              <div id="resultado">
+                <h3 id="txt"></h3>
+                <a id="linkTo" class="btn btn-primary btn-lg col-2" href="" role="button" value="122"></a>
+              </div>
+
+              <hr class="my-4">
+              <p><br>Reference:<br>
+                - https://medium.com/@coderacademy/32-sites-built-with-reactjs-172e3a4bed81<br>
+                - https://medium.com/@DanSiepen/top-15-sites-built-with-node-js-a6412638eb28
+              </p>
+          </div>
+        </div>
+
+      
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script src="./main.js"></script>
+    </body>
+    <footer>
+    </footer>
+</html>

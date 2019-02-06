@@ -1,0 +1,36 @@
+body body{
+    background-color: gray;
+}
+
+#btnRslt{
+    margin-top: 2rem;
+}
+
+#question{
+    margin-top: 3rem;
+    font-weight: bold
+}
+
+
+#navb {
+    position: fixed;
+    top: 0;
+}
+
+.image:hover {
+    opacity: 0.3;
+}
+
+.nav-link:hover {
+    opacity:0.5;
+}
+
+.btnLink {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    margin-top: 1rem;
+    display: none;
+}
